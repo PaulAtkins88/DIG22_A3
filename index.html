@@ -8,7 +8,7 @@
     <title>Southern Coast Festival of Lights</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    
+
     <!-- My own font awesome kit -->
     <script src="https://kit.fontawesome.com/97b0907937.js" crossorigin="anonymous"></script>
   </head>
@@ -25,13 +25,17 @@
         />
       </div>
       <span class="follow-me">Follow me...</span
-        ><span class="follow-me-icon"><i class="fas fa-sort-down"></i></span>
+      ><span class="follow-me-icon"><i class="fas fa-sort-down"></i></span>
     </header>
     <nav>
       <ul>
         <li class="logo-small navItem">
           <a href="#home"
-            ><img src="images/festival-of-light-logo-500x265.png" width="500" height="265" alt="home"
+            ><img
+              src="images/festival-of-light-logo-500x265.png"
+              width="500"
+              height="265"
+              alt="home"
           /></a>
         </li>
         <li class="about navItem"><a href="#about">About</a></li>
@@ -87,14 +91,18 @@
         </div>
       </section>
       <section id="contact">
-        <form id="contact" onsubmit="alert('Thanks for Subscribing');">
-          <label> Blah.</label>
-          <button type="submit">Submit</button>
-        </form>
+        <div class="container form">
+          <form name="contact-form" id="contact-form" onsubmit="alert('Thanks for Subscribing');">
+            <div class="input-field"><input id="name" class="form-input" type="text" placeholder="Name" value="" required=""></div>
+            <div class="input-field"><input id="email" class="form-input" type="Email" placeholder="Email" value="" required=""></div>
+            <div class="input-field"><input id="phone" class="form-input" type="number" placeholder="Phone number" value="" required=""></div>
+            <button class="form-submit" type="submit">Submit</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="footer"> This is the footer</div>
+      <div class="footer">This is the footer</div>
     </footer>
   </body>
   <script src="scripts/main.js"></script>

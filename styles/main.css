@@ -35,6 +35,8 @@
     font-style: italic;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
 
 /* WHOLE SITE RULES */
 
@@ -46,7 +48,7 @@
 }
 
 body {
-    font-family: Athelas;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -116,7 +118,8 @@ header div {
 /* NAVIGATION BAR */
 
 nav {
-    font-family: DhanikansSignature2;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
     font-size: 3vw;
     width: 100%;
     top: 0px;
@@ -186,5 +189,16 @@ main div{
 }
 
 #contact form {
-    text-align: center;
+    height: 1rem;
+}
+
+.container {
+    background-color: white;
+}
+
+.input-field{
+    height: 1px;
+    margin: 0px 0px 2rem 0px;
+    padding: 0.1rem 0px 0px 0px;
+    max-width: 100%;
 }
