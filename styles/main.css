@@ -1,0 +1,190 @@
+/* FONTS */
+
+@font-face {
+    font-family: DhanikansSignature2;
+    src: url(../fonts/Dhanikans\ Signature\ 2_dafont.ttf);
+}
+
+@font-face {
+    font-family: DhanikansSignature2;
+    src: url(../fonts/Dhanikans\ Signature\ Italic_dafont.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Athelas;
+    src: url(../fonts/Athelas-Regular.ttf);
+}
+
+@font-face {
+    font-family: Athelas;
+    src: url(../fonts/Athelas-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Athelas;
+    src: url(../fonts/Athelas-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Athelas;
+    src: url(../fonts/Athelas-Italic.ttf);
+    font-style: italic;
+}
+
+
+/* WHOLE SITE RULES */
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background-color: rbg(255,255,255);
+}
+
+body {
+    font-family: Athelas;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header div {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    align-content: center;
+}
+
+#topBtn {
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    font-size: 16pt;
+    border:none;
+    outline:none;
+    background-color: rgb(69,69,69);
+    color:rgb(255, 255, 245);
+    padding:15px;
+    border-radius: 4px;
+  }
+  
+  #topBtn:hover {
+    background-color: rgba(69,69,69,0.2);
+  }
+
+/* LANDING SITE */
+
+.hero-image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.follow-me {
+    margin: auto;
+    width: 100%;
+    display: block;
+    font-family: DhanikansSignature2;
+    font-size: 3vw;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.follow-me-icon {
+    margin: auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    font-family: DhanikansSignature2;
+    font-size: 3vw;
+    width: 100%;
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+    background-color: white;
+}
+
+nav li {
+    display: inline;
+    padding: 0px calc(10vw/5) 0px calc(10vw/5);
+    margin: 0px calc(10vw/4) 0 calc(10vw/4);
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logo-small img {
+    width: calc(20vw/5);
+    margin: 0 auto;
+    height: auto;
+}
+
+div {
+    display: block;
+    margin: 10vw;
+    font-size: 1.5rem;
+}
+
+/* MAIN */
+main {
+    display: inline-grid;
+    margin-left: calc(65vw/4);
+}
+main div{
+    height: 100vh;
+}
+
+
+/* ABOUT */
+
+#about {
+    background-image: linear-gradient(aqua,darkorange);
+}
+
+
+/* ENTERTAINMENT */
+
+#entertainment {
+    background-image: linear-gradient(darkorange,greenyellow);
+}
+
+
+/* FOOD */
+
+#food {
+    background-image: linear-gradient(greenyellow,chocolate);
+}
+
+
+/* CONTACT */
+
+#contact {
+    background-image: linear-gradient(chocolate,white);
+}
+
+#contact form {
+    text-align: center;
+}
