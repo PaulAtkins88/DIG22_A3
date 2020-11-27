@@ -146,7 +146,7 @@ main {
   margin-left: calc(65vw / 4);
 }
 
-section div {
+section {
   height: 100vh;
   margin: 0 0 0 4vw;
   font-size: 1.5rem;
@@ -155,6 +155,22 @@ section div {
 
 #about {
   background-image: linear-gradient(aqua, darkorange);
+  display: flex;
+}
+
+.about-img img {
+  width: 33vw;
+  height: auto;
+  margin: 5vh 2vw 0 3vw;
+}
+
+
+img.image1 {
+  transform: rotate(-10deg);
+}
+
+img.image2 {
+  transform: rotate(10deg);
 }
 /* ENTERTAINMENT */
 
