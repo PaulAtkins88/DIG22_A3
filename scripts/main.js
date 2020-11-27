@@ -1,3 +1,16 @@
+// TODO: Remove this pre submission
+var debug = true;
+
+// GLOBAL VARIABLES
+var mobile = false;
+
+// Only 1 nav bar hence [0] in array,
+// but just in case in future another one is added.
+var navlinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
+
+// now get the sections in the page and fill an array
+var sections = document.getElementsByTagName("main")[0].getElementsByTagName("section");
+
 var nav = document.getElementsByClassName("navItem");
 var about = document.getElementById("about");
 var entertainment = document.getElementById("entertainment");
@@ -14,33 +27,57 @@ const navElements = {
 var sections = document.getElementsByTagName("main")[0].getElementsByTagName("section");
 window.onscroll = function () {
   scrollFunction();
-  monitorNav();
+  navHighlighter();
 };
 
 function onStart() {
   console.log("Script loaded");
   clearNavHighlighting();
+  // Debugging function.
+  if (debug) {
+    console.log(navlinks);
+    console.log(sections);
+  }
+
+  if (document.getElementsByTagName("body")[0].clientWidth < 600) {
+    mobile = true;
+    console.log("Mobile device");
+  } else {
+    mobile = false;
+    console.log("Not mobile");
+  }
 }
 
-function monitorNav() {
+function navHighlighter() {
+  if (about.scrollIntoView) console.log(true);
+  else console.log(false);
+  var navHeight = navElements.ABOUT.scrollTop;
+  console.log(window.scrollY);
   if (window.scrollY < about.offsetTop) {
     clearNavHighlighting();
-  }
-  if (window.scrollY > about.offsetHeight && window.scrollY < entertainment.offsetTop) {
+  } else if (
+    window.scrollY >= about.offsetTop - navElements.ABOUT.offsetTop &&
+    window.scrollY < entertainment.offsetTop
+  ) {
     clearNavHighlighting();
     setColor(navElements.ABOUT, "aqua");
-  }
-  if (window.scrollY > entertainment.offsetTop) {
+  } else if (
+    window.scrollY >= entertainment.offsetTop - navElements.ENTERTAINMENT.offsetTop &&
+    window.scrollY < food.offsetTop
+  ) {
     clearNavHighlighting();
     setColor(navElements.ENTERTAINMENT, "darkorange");
-  }
-  if (window.scrollY > food.offsetTop) {
+  } else if (
+    window.scrollY >= food.offsetTop - navElements.FOOD.offsetTop &&
+    window.scrollY < contact.offsetTop
+  ) {
     clearNavHighlighting();
     setColor(navElements.FOOD, "greenyellow");
-  }
-  if (window.scrollY > contact.offsetTop) {
+  } else if (window.scrollY >= contact.offsetTop - navElements.CONTACT.offsetTop) {
     clearNavHighlighting();
     setColor(navElements.CONTACT, "chocolate");
+  } else {
+    clearNavHighlighting();
   }
 }
 

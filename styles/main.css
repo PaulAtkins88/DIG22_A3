@@ -1,204 +1,240 @@
 /* FONTS */
 
 @font-face {
-    font-family: DhanikansSignature2;
-    src: url(../fonts/Dhanikans\ Signature\ 2_dafont.ttf);
+  font-family: DhanikansSignature2;
+  src: url(../fonts/Dhanikans\ Signature\ 2_dafont.ttf);
 }
 
 @font-face {
-    font-family: DhanikansSignature2;
-    src: url(../fonts/Dhanikans\ Signature\ Italic_dafont.ttf);
-    font-style: italic;
+  font-family: DhanikansSignature2;
+  src: url(../fonts/Dhanikans\ Signature\ Italic_dafont.ttf);
+  font-style: italic;
 }
 
 @font-face {
-    font-family: Athelas;
-    src: url(../fonts/Athelas-Regular.ttf);
+  font-family: Athelas;
+  src: url(../fonts/Athelas-Regular.ttf);
 }
 
 @font-face {
-    font-family: Athelas;
-    src: url(../fonts/Athelas-Bold.ttf);
-    font-weight: bold;
+  font-family: Athelas;
+  src: url(../fonts/Athelas-Bold.ttf);
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: Athelas;
-    src: url(../fonts/Athelas-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
+  font-family: Athelas;
+  src: url(../fonts/Athelas-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: Athelas;
-    src: url(../fonts/Athelas-Italic.ttf);
-    font-style: italic;
+  font-family: Athelas;
+  src: url(../fonts/Athelas-Italic.ttf);
+  font-style: italic;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 /* WHOLE SITE RULES */
 
 * {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    background-color: rbg(255,255,255);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: rbg(255, 255, 255);
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 header div {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5rem;
-    align-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  align-content: center;
 }
 
 #topBtn {
-    display:none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 1;
-    font-size: 16pt;
-    border:none;
-    outline:none;
-    background-color: rgb(69,69,69);
-    color:rgb(255, 255, 245);
-    padding:15px;
-    border-radius: 4px;
-  }
-  
-  #topBtn:hover {
-    background-color: rgba(69,69,69,0.2);
-  }
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  font-size: 16pt;
+  border: none;
+  outline: none;
+  background-color: rgb(69, 69, 69);
+  color: rgb(255, 255, 245);
+  padding: 15px;
+  border-radius: 4px;
+}
 
+#topBtn:hover {
+  background-color: rgba(69, 69, 69, 0.2);
+}
 /* LANDING SITE */
 
 .hero-image {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .follow-me {
-    margin: auto;
-    width: 100%;
-    display: block;
-    font-family: DhanikansSignature2;
-    font-size: 3vw;
-    text-align: center;
-    position: absolute;
-    bottom: 30px;
+  margin: auto;
+  width: 100%;
+  display: block;
+  font-family: DhanikansSignature2;
+  font-size: 3vw;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
 }
 
 .follow-me-icon {
-    margin: auto;
-    width: 100%;
-    display: block;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
+  margin: auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
 }
-
-
 /* NAVIGATION BAR */
 
 nav {
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-size: 3vw;
-    width: 100%;
-    top: 0px;
-    position: sticky;
-    z-index: 10;
-    background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 3vw;
+  width: 100%;
+  top: 0px;
+  position: sticky;
+  z-index: 10;
+  background-color: white;
 }
 
 nav li {
-    display: inline;
-    padding: 0px calc(10vw/5) 0px calc(10vw/5);
-    margin: 0px calc(10vw/4) 0 calc(10vw/4);
+  display: inline;
+  padding: 0px calc(10vw / 5) 0px calc(10vw / 5);
+  margin: 0px calc(10vw / 4) 0 calc(10vw / 4);
 }
 
 nav li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .logo-small img {
-    width: calc(20vw/5);
-    margin: 0 auto;
-    height: auto;
+  width: calc(20vw / 5);
+  margin: 0 auto;
+  height: auto;
 }
 
 div {
-    display: block;
-    margin: 10vw;
-    font-size: 1.5rem;
+  display: block;
+  margin: 0 0 0 4vw;
+  font-size: 1.5rem;
 }
-
 /* MAIN */
+
 main {
-    display: inline-grid;
-    margin-left: calc(65vw/4);
-}
-main div{
-    height: 100vh;
+  display: inline-grid;
+  margin-left: calc(65vw / 4);
 }
 
-
+section div {
+  height: 100vh;
+}
 /* ABOUT */
 
 #about {
-    background-image: linear-gradient(aqua,darkorange);
+  background-image: linear-gradient(aqua, darkorange);
 }
-
-
 /* ENTERTAINMENT */
 
 #entertainment {
-    background-image: linear-gradient(darkorange,greenyellow);
+  background-image: linear-gradient(darkorange, greenyellow);
 }
-
-
 /* FOOD */
 
 #food {
-    background-image: linear-gradient(greenyellow,chocolate);
+  background-image: linear-gradient(greenyellow, chocolate);
 }
-
-
 /* CONTACT */
 
 #contact {
-    background-image: linear-gradient(chocolate,white);
+  background-image: linear-gradient(chocolate, white);
 }
 
-#contact form {
-    height: 1rem;
+form div {
+  flex-flow: wrap;
+  height: auto;
 }
 
-.container {
-    background-color: white;
+.form-container {
+  display: flex;
+  background-color: aqua;
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  height: auto;
+  background-image: linear-gradient(chocolate, white);
+  border: solid;
 }
 
-.input-field{
-    height: 1px;
-    margin: 0px 0px 2rem 0px;
-    padding: 0.1rem 0px 0px 0px;
-    max-width: 100%;
+.contact-row,
+.form-submit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 0 0 0;
+  height: auto;
+  width: 100%;
+}
+
+.contact-col {
+  display: flex;
+  margin: 0vw 0 0 3vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 1;
+  padding: 15px;
+}
+
+.contact-heading {
+  flex: 0;
+  height: auto;
+  text-align: center;
+  background-color: aqua;
+  width: 70%;
+  margin: auto;
+  justify-content: space-evenly;
+  background-image: linear-gradient(white, chocolate);
+  border: solid;
+}
+
+.input {
+  padding: 0.1rem 0px 0px 0px;
+  height: auto;
+  margin: 0;
+  width: 100%;
+}
+
+.input-textbox {
+  width: 200px;
+  height: 200px;
 }
