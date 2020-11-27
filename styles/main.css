@@ -83,6 +83,10 @@ header div {
 #topBtn:hover {
   background-color: rgba(69, 69, 69, 0.2);
 }
+
+.text {
+  margin: 0 5vw 0 5vw;
+}
 /* LANDING SITE */
 
 .hero-image {
@@ -148,7 +152,7 @@ main {
 
 section {
   height: 100vh;
-  margin: 0 0 0 4vw;
+  margin: auto;
   font-size: 1.5rem;
 }
 /* ABOUT */
