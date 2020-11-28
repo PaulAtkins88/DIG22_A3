@@ -160,6 +160,7 @@ section {
 #about {
   background-image: linear-gradient(aqua, darkorange);
   display: flex;
+  /* height: auto; */
 }
 
 .about-img img {
@@ -169,27 +170,49 @@ section {
 }
 
 
-img.image1 {
+#about img.image1 {
   transform: rotate(-10deg);
 }
 
-img.image2 {
+#about img.image2 {
   transform: rotate(10deg);
 }
 /* ENTERTAINMENT */
 
 #entertainment {
   background-image: linear-gradient(darkorange, greenyellow);
+  height: auto;
+  display: flex;
+}
+
+.ent-img {
+  height: auto;
+  margin: 0px 0px 0 0;
+}
+.ent-img img {
+  width: 33vw;
+  height: auto;
+  margin: 5vh 2vw 0 3vw;
+}
+
+#entertainment img.image1 {
+  transform: rotate(3deg);
+}
+
+#entertainment img.image2 {
+  transform: rotate(-3deg);
 }
 /* FOOD */
 
 #food {
   background-image: linear-gradient(greenyellow, chocolate);
+  /* height: auto; */
 }
 /* CONTACT */
 
 #contact {
   background-image: linear-gradient(chocolate, white);
+  /* height: auto; */
 }
 
 form div {
