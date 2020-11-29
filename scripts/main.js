@@ -49,10 +49,7 @@ function onStart() {
 }
 
 function navHighlighter() {
-  if (about.scrollIntoView) console.log(true);
-  else console.log(false);
-  var navHeight = navElements.ABOUT.scrollTop;
-  console.log(window.scrollY);
+
   if (window.scrollY < about.offsetTop) {
     clearNavHighlighting();
   } else if (
