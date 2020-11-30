@@ -105,12 +105,12 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
+/* toggle the hamburger menu on/off when in mobile mode */
+function showHideMenu() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    if (x.className === "navbar") {
+        x.className += " menuOpen";
     } else {
-        x.className = "topnav";
+        x.className = "navbar";
     }
 }
