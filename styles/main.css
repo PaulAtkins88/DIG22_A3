@@ -208,7 +208,7 @@ section h2.section-heading {
 }
 
 #about img {
-  width: 45vw;
+  width: 33vw;
   height: auto;
   margin: 5vh 2vw 0 3vw;
 }
@@ -260,9 +260,9 @@ section h2.section-heading {
 }
 
 #food img {
-  width: 25vh;
+  width: 40vh;
   height: auto;
-  /* padding: 10vh; */
+  padding: 10vh;
 }
 
 .food-img img {
@@ -331,7 +331,6 @@ form div {
   flex: 0;
   height: auto;
   text-align: center;
-  background-color: aqua;
   width: 70%;
   margin: auto;
   justify-content: space-evenly;
@@ -446,7 +445,7 @@ footer p {
   section > div {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -505,6 +504,11 @@ footer p {
   #about .text {
     grid-row: 2;
     grid-column: 1 / span 2;
+  }
+
+  #about img {
+    width: 45vw;
+    height: auto;
   }
 
   #about img.image1 {
@@ -567,6 +571,11 @@ footer p {
     margin: auto;
     padding: 2vh;
   }
+  #food img {
+    width: 20vh;
+    height: auto;
+    padding: 10vh;
+  }
 
   /* CONTACT */
 
@@ -588,5 +597,9 @@ footer p {
     grid-row: 2;
     grid-column: 1 / span 2;
     font-size: 1.5rem;
+  }
+  
+  #contact form {
+    text-align: center;
   }
 }
