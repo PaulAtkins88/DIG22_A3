@@ -88,6 +88,10 @@ header div {
 
 .text {
   margin: 0 5vw 0 5vw;
+  font-size: 1em;
+  font-family: Athelas;
+  font-style: normal;
+  font-weight: normal;
 }
 
 hr {
@@ -136,7 +140,6 @@ nav {
   top: 0px;
   position: sticky;
   z-index: 10;
-  /* margin: 0px calc(10vw / 4) 0px calc(10vw / 4); */
   background-color: white;
 }
 
@@ -156,11 +159,6 @@ nav li a {
   margin: 0 auto;
   height: auto;
 }
-
-/*  CHANGE THIS... FROM THE W3 SCHOOLS WEBSITE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-/* Add a black background color to the top navigation */
-
 .navbar {
   overflow: hidden;
 }
@@ -168,10 +166,7 @@ nav li a {
 /* Style the links inside the navigation bar */
 
 .navbar a {
-  /* float: left; */
-  /* display: block; */
   color: #000000;
-  /* text-align: center; */
   text-decoration: none;
   font-size: 1em;
   vertical-align: middle;
@@ -184,20 +179,6 @@ nav li a {
   height: auto;
 }
 
-/* Change the color of links on hover */
-/* 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-} */
-
-/* Add an active class to highlight the current page */
-
-.navbar a.active {
-  /* background-color: #4CAF50; */
-  /* color: white; */
-}
-
 /* Hide the link that should open and close the navbar on small screens */
 
 .navbar .icon {
@@ -207,23 +188,23 @@ nav li a {
 /* MAIN */
 
 main {
-  /* display: inline-grid; */
   margin-left: calc(65vw / 4);
 }
 
 section {
   height: 100vh;
   margin: auto;
-  /* font-size: 1.5rem; */
   padding-top: 10vh;
+}
+
+section span.section-heading {
+    display:none;
 }
 
 /* ABOUT */
 
 #about {
   background-image: linear-gradient(aqua, darkorange);
-  /* display: flex; */
-  /* height: auto; */
 }
 
 #about img {
@@ -246,12 +227,13 @@ section {
   background-image: linear-gradient(darkorange, greenyellow);
   height: auto;
   display: flex;
+  padding: 1vh;
 }
 
 #entertainment img {
-  width: 33vw;
+  width: 40vh;
   height: auto;
-  margin: 0px 0px 0 0;
+  padding: 10vh;
 }
 
 .ent-img img {
@@ -266,6 +248,7 @@ section {
 
 #entertainment img.image2 {
   transform: rotate(-3deg);
+  margin: auto;
 }
 
 /* FOOD */
@@ -277,9 +260,9 @@ section {
 }
 
 #food img {
-  width: 33vw;
-  height: auto;
-  margin: 0px 0px 0 0;
+    width: 40vh;
+    height: auto;
+    padding: 10vh;
 }
 
 .food-img img {
@@ -303,8 +286,8 @@ section {
 
 #contact {
   background-image: linear-gradient(chocolate, white);
-  /* height: auto; */
   padding-top: 33vh;
+  font-size: 2em;
 }
 
 form div {
@@ -331,14 +314,12 @@ form div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 0 0 0;
-  height: auto;
   width: 100%;
 }
 
 .contact-col {
   display: flex;
-  margin: 0vw 0 0 3vw;
+  margin: 0 0 0 3vw;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
@@ -359,7 +340,6 @@ form div {
 }
 
 .input {
-  padding: 0.1rem 0px 0px 0px;
   height: auto;
   margin: 0;
   width: 100%;
@@ -368,6 +348,22 @@ form div {
 .input-textbox {
   width: 200px;
   height: 200px;
+}
+form button {
+    
+align-content: center;
+    
+width: 40% !important;
+    
+margin-left: auto !important;
+    
+margin-right: auto !important;
+    
+/* text-align: center; */
+    
+display: inline-block !important;
+    
+padding: 1vh;
 }
 
 /* FOOTER */
@@ -445,13 +441,22 @@ footer .fine-print {
   section {
     padding-top: 5vh;
   }
-  section > div {
+  section span.section-heading {
+    display:block;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'DhanikansSignature2';
+    font-weight: bold;
+    font-style: italic;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+  }
+  section>div {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     margin-left: auto;
     margin-right: auto;
-    grid-column: 1;
   }
 
   /* In mobile view if navigation not in focus, set it slightly transparent */
@@ -507,14 +512,14 @@ footer .fine-print {
 
   #about .text {
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 1 / span 2;
   }
   .about-img {
     text-align: center;
   }
   #about img.image1 {
-    grid-row: 1;
-    grid-column: 1;
+    grid-row: 3;
+    grid-column: 2;
     margin: auto;
     padding: 1vh;
     transform: none;
@@ -528,15 +533,15 @@ footer .fine-print {
   }
   /* ENTERTAINMENT */
   #entertainment .text {
-    grid-row: 1;
-    grid-column: 1;
+    grid-row: 2;
+    grid-column: 1 / span 2;
   }
   .ent-img {
     text-align: center;
   }
   #entertainment img.image1 {
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 3;
+    grid-column: 1 / span 2;
     transform: none;
     margin: auto;
     padding: 2vh;
@@ -550,25 +555,46 @@ footer .fine-print {
   }
   /* FOOD */
   #food .text {
-    grid-row: 1;
-    grid-column: 1;
+    grid-row: 2;
+    grid-column: 1 / span 2;
   }
   .food-img {
     text-align: center;
   }
   #food img.image1 {
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1;
     transform: none;
-    margin-right: auto;
+    margin: auto;
     padding: 2vh;
     align-self: center;
   }
   #food img.image2 {
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 3;
+    grid-column: 2;
     transform: none;
-    margin-left: auto;
+    margin: auto;
     align-self: center;
+  }
+
+  /* CONTACT */
+  
+  .form-container {
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    height: auto;
+    background-image: linear-gradient(chocolate, white);
+    border: solid;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+  .contact-heading {
+      grid-row: 2;
+      grid-column: 1 / span 2;
+      font-size: 1.5rem;
   }
 }
