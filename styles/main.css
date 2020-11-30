@@ -197,7 +197,7 @@ section {
 }
 
 section h2.section-heading {
-    display:none;
+  display: none;
 }
 
 /* ABOUT */
@@ -207,7 +207,7 @@ section h2.section-heading {
 }
 
 #about img {
-  width: 33vw;
+  width: 45vw;
   height: auto;
   margin: 5vh 2vw 0 3vw;
 }
@@ -259,9 +259,9 @@ section h2.section-heading {
 }
 
 #food img {
-    width: 40vh;
-    height: auto;
-    padding: 10vh;
+  width: 33vh;
+  height: auto;
+  padding: 10vh;
 }
 
 .food-img img {
@@ -349,20 +349,12 @@ form div {
   height: 200px;
 }
 form button {
-    
-align-content: center;
-    
-width: 40% !important;
-    
-margin-left: auto !important;
-    
-margin-right: auto !important;
-    
-/* text-align: center; */
-    
-display: inline-block !important;
-    
-padding: 1vh;
+  align-content: center;
+  width: 40% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: inline-block !important;
+  padding: 1vh;
 }
 
 /* FOOTER */
@@ -441,16 +433,15 @@ footer .fine-print {
     padding-top: 5vh;
   }
   section h2.section-heading {
-    display:block;
+    display: block;
     font-size: 4em;
     text-align: center;
-    font-family: 'DhanikansSignature2';
+    font-family: "DhanikansSignature2";
     font-weight: bold;
-    font-style: italic;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
-  section>div {
+  section > div {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 50% 50%;
@@ -513,9 +504,7 @@ footer .fine-print {
     grid-row: 2;
     grid-column: 1 / span 2;
   }
-  .about-img {
-    text-align: center;
-  }
+
   #about img.image1 {
     grid-row: 3;
     grid-column: 2;
@@ -523,21 +512,21 @@ footer .fine-print {
     padding: 1vh;
     transform: none;
   }
+
   #about img.image2 {
     grid-row: 3;
     grid-column: 1;
     margin: auto;
-    padding: 1vh;
+    padding: 2vh;
     transform: none;
   }
+
   /* ENTERTAINMENT */
   #entertainment .text {
     grid-row: 2;
     grid-column: 1 / span 2;
   }
-  .ent-img {
-    text-align: center;
-  }
+
   #entertainment img.image1 {
     grid-row: 3;
     grid-column: 1 / span 2;
@@ -546,38 +535,38 @@ footer .fine-print {
     padding: 2vh;
     align-self: center;
   }
+
   #entertainment img.image2 {
     display: none;
     grid-row: 3;
     grid-column: 1;
     transform: none;
   }
+
   /* FOOD */
   #food .text {
-    grid-row: 2;
-    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    grid-column: 2;
   }
-  .food-img {
-    text-align: center;
-  }
+
   #food img.image1 {
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
     transform: none;
     margin: auto;
     padding: 2vh;
     align-self: center;
   }
+
   #food img.image2 {
     grid-row: 3;
-    grid-column: 2;
+    grid-column: 1 / span 2;
     transform: none;
     margin: auto;
-    align-self: center;
   }
 
   /* CONTACT */
-  
+
   .form-container {
     width: 75%;
     padding-left: 15px;
@@ -591,9 +580,10 @@ footer .fine-print {
     grid-row: 3;
     grid-column: 1 / span 2;
   }
+
   .contact-heading {
-      grid-row: 2;
-      grid-column: 1 / span 2;
-      font-size: 1.5rem;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    font-size: 1.5rem;
   }
 }
