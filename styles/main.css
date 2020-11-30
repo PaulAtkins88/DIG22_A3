@@ -1,13 +1,15 @@
 /* FONTS */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+
 @font-face {
   font-family: DhanikansSignature2;
-  src: url(../fonts/Dhanikans\ Signature\ 2_dafont.ttf);
+  src: url(../fonts/Dhanikans-Signature-2_dafont.ttf);
 }
 
 @font-face {
   font-family: DhanikansSignature2;
-  src: url(../fonts/Dhanikans\ Signature\ Italic_dafont.ttf);
+  src: url(../fonts/Dhanikans-Signature-Italic_dafont.ttf);
   font-style: italic;
 }
 
@@ -35,15 +37,12 @@
   font-style: italic;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
-
 /* WHOLE SITE RULES */
 
 * {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background-color: rbg(255, 255, 255);
 }
 
 body {
@@ -197,7 +196,7 @@ section {
   padding-top: 10vh;
 }
 
-section span.section-heading {
+section h2.section-heading {
     display:none;
 }
 
@@ -441,7 +440,7 @@ footer .fine-print {
   section {
     padding-top: 5vh;
   }
-  section span.section-heading {
+  section h2.section-heading {
     display:block;
     font-size: 4em;
     text-align: center;
