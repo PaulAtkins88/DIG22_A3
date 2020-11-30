@@ -360,7 +360,10 @@ form button {
 /* FOOTER */
 
 footer {
+  width: 80%;
   font-size: 8pt;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Contact */
@@ -370,7 +373,7 @@ footer .footer {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 33% 33% 33%;
-  margin: auto;
+  margin-left: auto;
   justify-content: space-between;
 }
 
