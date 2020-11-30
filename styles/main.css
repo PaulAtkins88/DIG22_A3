@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 
+/* "Download Free Font Dhanikans Signature 2". 2020. Wfonts.Com. Accessed November 30. https://www.wfonts.com/font/dhanikans-signature-2. */
 @font-face {
   font-family: DhanikansSignature2;
   src: url(../fonts/Dhanikans-Signature-2_dafont.ttf);
@@ -13,6 +14,7 @@
   font-style: italic;
 }
 
+/* "Athelas Font Family Free Download". 2020. Fonts Network. Accessed November 30. https://fontsnetwork.com/athelas-font-family/. */
 @font-face {
   font-family: Athelas;
   src: url(../fonts/Athelas-Regular.ttf);
